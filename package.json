@@ -12,5 +12,8 @@
     "tests"
   ],
   "author": "Francisco Magaña",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.6.4"
+  }
 }
