@@ -4,7 +4,7 @@
   "description": "A simple videogame objects library to practices testing",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [
     "practice",
@@ -14,6 +14,11 @@
   "author": "Francisco Magaña",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.22.15",
+    "@babel/preset-env": "^7.22.15",
+    "@babel/preset-typescript": "^7.22.15",
+    "@types/jest": "^29.5.4",
+    "babel-jest": "^29.6.4",
     "jest": "^29.6.4"
   }
 }
