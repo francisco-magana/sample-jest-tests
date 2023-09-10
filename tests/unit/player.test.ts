@@ -14,8 +14,8 @@ describe('Player creation', () => {
 
 describe('Player actions', () => {
 
-    let damage;
-    let life_points;
+    let damage: number;
+    let life_points: number;
 
     beforeAll(() => {
       damage = faker.number.int({ min: 1, max: 50 });
