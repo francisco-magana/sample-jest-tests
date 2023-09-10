@@ -12,4 +12,14 @@ export class Player {
         this.mana = mana;
     }
 
+    takeDamage(damage: number): number {
+        this.life -= damage;
+        return this.life;
+    }
+
+    heal(life_points: number): number {
+        this.life += life_points;
+        return this.life;
+    }
+
 }
