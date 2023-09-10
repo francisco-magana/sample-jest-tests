@@ -15,9 +15,9 @@ describe('Player creation', () => {
 describe('Player actions', () => {
 
     it('receives damage', () => {
-        let initialHealth = fakePlayer.life;
+        let initialLife = fakePlayer.life;
         let damage = faker.number.int({ min: 1, max: 10 });
-        expect(fakePlayer.takeDamage(damage)).toBe(initialHealth - damage)
+        expect(fakePlayer.takeDamage(damage)).toBe(initialLife - damage)
     })
 
 })
