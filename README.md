@@ -67,3 +67,4 @@ npm run test
 
 You will se an output like this:
 
+![image](https://github.com/francisco-magana/sample-jest-tests/assets/64680073/7b8e5704-6a3f-47d5-b0fb-73701f563ee7)
