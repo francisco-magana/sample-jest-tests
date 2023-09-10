@@ -14,10 +14,23 @@ describe('Player creation', () => {
 
 describe('Player actions', () => {
 
+    let damage;
+    let life_points;
+
+    beforeAll(() => {
+      damage = faker.number.int({ min: 1, max: 50 });
+      life_points = faker.number.int({ min: 1, max: 10 });
+    })
+
     it('receives damage', () => {
         let initialLife = fakePlayer.life;
-        let damage = faker.number.int({ min: 1, max: 10 });
         expect(fakePlayer.takeDamage(damage)).toBe(initialLife - damage)
+    })
+
+    it('heal', () => {
+        let initialLife = fakePlayer.life;
+        fakePlayer.takeDamage(damage);
+        expect(fakePlayer.heal(life_points)).toBe(initialLife - damage + life_points)
     })
 
 })
