@@ -14,4 +14,13 @@ export class Enemy {
         this.is_defeated = is_defeated;
     }
 
+    takeDamage(damage: number): number {
+        this.life -= this.calculateDamage(damage);
+        return this.life;
+    }
+
+    calculateDamage(damage: number): number {
+        return damage <= this.defense ? 0 : damage - this.defense;
+    }
+
 }
