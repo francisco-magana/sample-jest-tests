@@ -1,3 +1,5 @@
+🚧 This is a work in progress, tests, classes and application are not finished/refactored 🚧
+
 # Sample jest testing
 
 This is a practice project about testing. I want to explore the useful tools that jest provide us for unit and integration tests.
